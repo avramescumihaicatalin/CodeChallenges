@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="backgroundViewGroups">#FFF9CF</color>
+    <color name="color1ViewGroups">#9BF99C</color>
+    <color name="color2ViewGroups">#128477</color>
+    <color name="color3ViewGroups">#D62261</color>
+    <color name="backgroundConstraintLayout">#FAFAFA</color>
 </resources>
