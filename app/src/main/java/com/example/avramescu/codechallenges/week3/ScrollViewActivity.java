@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import com.example.avramescu.codechallenges.R;
 
-public class ScrollView extends AppCompatActivity {
+public class ScrollViewActivity extends AppCompatActivity {
 
     private TextView mTextViewLongText;
 

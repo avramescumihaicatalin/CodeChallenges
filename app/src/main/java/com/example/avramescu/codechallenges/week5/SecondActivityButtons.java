@@ -5,13 +5,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.avramescu.codechallenges.R;
-import com.example.avramescu.codechallenges.week3.ScrollView;
-
-import org.w3c.dom.Text;
+import com.example.avramescu.codechallenges.week3.ScrollViewActivity;
 
 public class SecondActivityButtons extends AppCompatActivity {
 
-    private ScrollView mScrollView;
+    private ScrollViewActivity mScrollView;
     private TextView mTextViewScrollview;
 
     public static final String textActivitate1 ="Activitate1             +" +

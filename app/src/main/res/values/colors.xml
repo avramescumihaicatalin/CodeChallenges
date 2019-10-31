@@ -8,4 +8,10 @@
     <color name="color2ViewGroups">#128477</color>
     <color name="color3ViewGroups">#D62261</color>
     <color name="backgroundConstraintLayout">#FAFAFA</color>
+    <color name="color_orange">#FC987E</color>
+    <color name="color_green">#CDEDD7</color>
+    <color name="color_blue">#7BCCC6</color>#CDEDD7
+    <color name="color_green_dark">#A2C89C</color>
+    <color name="color_yellow">#F0C160</color>
+    <color name="color_gray">#7AA3B9</color>
 </resources>

@@ -7,7 +7,7 @@ import com.example.avramescu.codechallenges.R;
 
 import java.util.ArrayList;
 
-public class Spinner extends AppCompatActivity {
+public class SpinnerActivity extends AppCompatActivity {
 
     private android.widget.Spinner mSpinner;
     ArrayList<String> mCandy;
@@ -24,7 +24,7 @@ public class Spinner extends AppCompatActivity {
     }
 
     private void setAdapter() {
-        mSpinner.setAdapter(new ArrayAdapter<String>(Spinner.this, android.R.layout.simple_list_item_1, mCandy));
+        mSpinner.setAdapter(new ArrayAdapter<>(SpinnerActivity.this, android.R.layout.simple_list_item_1, mCandy));
     }
 
     private void setData() {

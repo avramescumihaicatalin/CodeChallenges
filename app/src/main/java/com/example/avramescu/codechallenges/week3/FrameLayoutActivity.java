@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.avramescu.codechallenges.R;
 
-public class FrameLayout extends AppCompatActivity {
+public class FrameLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

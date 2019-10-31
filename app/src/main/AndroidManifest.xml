@@ -26,9 +26,9 @@
         <activity android:name=".week4.RecyclerViewActivity" />
         <activity android:name=".week4.ConstraintLayout" />
         <activity android:name=".week4.ViewGroupsActivity" />
-        <activity android:name=".week3.Spinner" />
-        <activity android:name=".week3.FrameLayout" />
-        <activity android:name=".week3.ScrollView" />
+        <activity android:name=".week3.SpinnerActivity" />
+        <activity android:name=".week3.FrameLayoutActivity" />
+        <activity android:name=".week3.ScrollViewActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
