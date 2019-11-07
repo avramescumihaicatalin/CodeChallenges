@@ -1,77 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".week4.ViewGroupsActivity"
-    android:background="@color/backgroundViewGroups"
-    >
+    android:background="@color/backgroundViewGroups">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:src="@drawable/android_1"
             android:layout_weight="1"
-            android:layout_marginRight="50dp"
-            />
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription"/>
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:src="@drawable/android_2"
             android:layout_weight="1"
-            android:layout_marginLeft="50dp"
-            />
-
+            tools:ignore="ContentDescription"/>
 
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        >
+        android:layout_weight="3">
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/color1ViewGroups"
-                >
-            </View>
+                android:background="@color/color1ViewGroups"/>
             
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/color2ViewGroups"
                 android:layout_margin="16dp"
-                android:layout_gravity="center"
-                >
-            </View>
+                android:layout_gravity="center"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/color3ViewGroups"
                 android:layout_gravity="center"
-                android:layout_margin="32dp"
-                >
-            </View>
+                android:layout_margin="32dp"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="48dp"
                 android:background="@color/backgroundViewGroups"
-                android:layout_gravity="center"
-                >
-            </View>
+                android:layout_gravity="center"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -80,8 +72,8 @@
                 android:layout_gravity="center"
                 android:background="@color/backgroundViewGroups"
                 android:layout_margin="128dp"
-                />
-    </FrameLayout>
+                tools:ignore="ContentDescription"/>
 
+    </FrameLayout>
 
 </LinearLayout>
