@@ -14,17 +14,19 @@
 
         </activity>
         <activity android:name=".week5.SecondActivityButtons" />
-        <activity android:name=".week5.ActivityButtons">
+        <activity android:name=".week5.FirstActivityButtons">
 
         </activity>
         <activity android:name=".week5.SecondActivity" />
-        <activity android:name=".week5.FirstActivity" />
-        <activity android:name=".week4.RecyclerViewActivity" >
+        <activity android:name=".week5.FirstActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".week4.RecyclerViewActivity" >
+
         </activity>
         <activity android:name=".week4.ConstraintLayout" />
         <activity android:name=".week4.ViewGroupsActivity" />

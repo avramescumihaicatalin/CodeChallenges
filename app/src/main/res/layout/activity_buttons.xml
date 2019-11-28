@@ -4,44 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".week5.ActivityButtons">
+    tools:context=".week5.FirstActivityButtons">
 
     <Button
-        android:id="@+id/button_activity1"
+        android:id="@+id/button_text_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button_activity2"
+        android:text="@string/label_text_one"
+        app:layout_constraintEnd_toStartOf="@+id/button_text_two"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="startActivity1"
-        />
+        android:onClick="startSecondActivityButtons" />
 
     <Button
-        android:id="@+id/button_activity2"
+        android:id="@+id/button_text_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button_activity3"
+        android:text="@string/label_text_two"
+        app:layout_constraintEnd_toStartOf="@+id/button_text_three"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_activity1"
+        app:layout_constraintStart_toEndOf="@+id/button_text_one"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="startActivity2"
-        />
+        android:onClick="startSecondActivityButtons"/>
 
     <Button
-        android:id="@+id/button_activity3"
+        android:id="@+id/button_text_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:text="Button"
+        android:text="@string/label_text_three"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_activity2"
+        app:layout_constraintStart_toEndOf="@+id/button_text_two"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="startActivity3"
-        />
+    android:onClick="startSecondActivityButtons" />
 </android.support.constraint.ConstraintLayout>
