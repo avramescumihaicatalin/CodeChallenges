@@ -11,15 +11,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".week5.SecondActivityChat"></activity>
         <activity android:name=".week5.FirstActivityChat">
-
-        </activity>
-        <activity android:name=".week5.SecondActivityButtons" />
-        <activity android:name=".week5.FirstActivityButtons">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".week5.SecondActivityButtons" />
+        <activity android:name=".week5.FirstActivityButtons">
+
         </activity>
         <activity android:name=".week5.SecondActivity" />
         <activity android:name=".week5.FirstActivity" >

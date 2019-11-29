@@ -21,4 +21,9 @@
     <string name="pasaj1">Mesaj1 </string>
     <string name="pasaj2">Mesaj2</string>
     <string name="pasaj3">Mesaj3</string>
+    <string name="hint_message">Message</string>
+    <string name="label_send">Send</string>
+    <string name="label_message_type_received">Message Received</string>
+    <string name="label_message_type_reply">Reply Received</string>
+    <string name="label_please_introduce_a_message">Introduceti un mesaj</string>
 </resources>

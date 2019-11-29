@@ -7,14 +7,14 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.avramescu.codechallenges.R;
-
-import org.w3c.dom.Text;
 
 public class SecondActivityChat extends AppCompatActivity {
 
     private TextView mTextViewMessageReceived;
+    private TextView mTextViewMessageType;
     private EditText mEditTextSecondActivity;
     public static final String CHEIE = "cheie2";
 
@@ -24,24 +24,13 @@ public class SecondActivityChat extends AppCompatActivity {
         setContentView(R.layout.activity_second_chat);
 
         initView();
-
+        setTitle("Second Activity");
     }
 
     private void initView() {
-        mTextViewMessageReceived = findViewById(R.id.textView_message_received);
-        mEditTextSecondActivity = findViewById(R.id.editText_second_activity);
-    }
-
-    public void startFirstActivityOnClick(View view) {
-        Intent intent = new Intent(SecondActivityChat.this, FirstActivityChat.class);
-        if(mEditTextSecondActivity!=null){
-            String mesaj = mEditTextSecondActivity.getText().toString();
-            if(!TextUtils.isEmpty(mesaj)){
-                intent.putExtra(CHEIE,mesaj);
-                startActivity(intent);
-            }
-        }
-
+        mTextViewMessageReceived = findViewById(R.id.text_view_received_message);
+        mTextViewMessageType = findViewById(R.id.text_view_message_type);
+        mEditTextSecondActivity = findViewById(R.id.edit_text_second_activity);
     }
 
     @Override
@@ -49,13 +38,36 @@ public class SecondActivityChat extends AppCompatActivity {
         super.onResume();
 
         String mesaj = null;
+        boolean reply = false;
         Bundle dataReceived = getIntent().getExtras();
         if(dataReceived != null){
             mesaj = dataReceived.getString(FirstActivityChat.CHEIE);
+            reply = dataReceived.getBoolean(FirstActivityChat.REPLY);
         }
         if(mTextViewMessageReceived != null && !TextUtils.isEmpty(mesaj) && mesaj!= null){
             mTextViewMessageReceived.setText(mesaj);
+            if(reply){
+                mTextViewMessageType.setText(getResources().getString(R.string.label_message_type_reply));
+            } else {
+                mTextViewMessageType.setText(getResources().getString(R.string.label_message_type_received));
+            }
         }
 
+    }
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(SecondActivityChat.this, FirstActivityChat.class);
+        if(mEditTextSecondActivity!=null){
+            String message = mEditTextSecondActivity.getText().toString();
+            if(!TextUtils.isEmpty(message)){
+                intent.putExtra(CHEIE,message);
+                intent.putExtra(FirstActivityChat.REPLY, true);
+                FirstActivityChat.replyState = true;
+                startActivity(intent);
+            } else {
+                Toast.makeText(this, getResources().
+                        getString(R.string.label_please_introduce_a_message), Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 }
