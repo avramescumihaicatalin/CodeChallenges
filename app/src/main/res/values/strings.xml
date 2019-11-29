@@ -26,4 +26,11 @@
     <string name="label_message_type_received">Message Received</string>
     <string name="label_message_type_reply">Reply Received</string>
     <string name="label_please_introduce_a_message">Introduceti un mesaj</string>
+    <string name="label_open_website">Open website</string>
+    <string name="label_browser">Enter your website here</string>
+    <string name="label_location">Enter your location here</string>
+    <string name="label_open_location">Open location</string>
+    <string name="label_text">Enter your text here</string>
+    <string name="label_share_text">Share text</string>
+    <string name="label_call">Call</string>
 </resources>
