@@ -18,7 +18,7 @@
     <string name="message1">mesaj1</string>
     <string name="message2">mesaj2</string>
     <string name="message3">mesaj3</string>
-    <string name="pasaj1">Activitate1             +</string>
-    <string name="pasaj2">Activitate2             +</string>
-    <string name="pasaj3">Activitate3             +</string>
+    <string name="pasaj1">Mesaj1 </string>
+    <string name="pasaj2">Mesaj2</string>
+    <string name="pasaj3">Mesaj3</string>
 </resources>
