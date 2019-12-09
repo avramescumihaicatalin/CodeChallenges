@@ -9,18 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".week6.StaticallyFragmentActivity">
+        <activity android:name=".week6.DynamicallyFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".week5.IntentActivity">
+        <activity android:name=".week6.StaticallyFragmentActivity">
 
         </activity>
+        <activity android:name=".week5.IntentActivity"></activity>
         <activity android:name=".week5.SecondActivityChat" />
-        <activity android:name=".week5.FirstActivityChat"></activity>
+        <activity android:name=".week5.FirstActivityChat" />
         <activity android:name=".week5.SecondActivityButtons" />
         <activity android:name=".week5.FirstActivityButtons" />
         <activity android:name=".week5.SecondActivity" />
