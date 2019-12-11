@@ -11,18 +11,20 @@ import com.example.avramescu.codechallenges.R;
 
 public class CommunicationBundleActivity extends AppCompatActivity {
 
-    public static final String SENDMESSAGETOFRAGMENT = "SENDMESSAGETOFRAGMENT";
+    public static final String SENDMESSAGETOFRAGMENTKEY = "SENDMESSAGETOFRAGMENTKEY";
 
-    Fragment fragment;
+    CommunicationBundleFragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_communication_bundle);
 
+        fragment = new CommunicationBundleFragment();
+
 //        sendData();
-//        addFragmentDinamically();
-        lastTry();
+        addFragmentDinamically();
+//        lastTry();
     }
 
     private void lastTry() {
@@ -41,7 +43,7 @@ public class CommunicationBundleActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.text_view_activity);
         if(textView != null){
             Bundle bundle = new Bundle();
-            bundle.putString(SENDMESSAGETOFRAGMENT, textView.getText().toString());
+            bundle.putString(SENDMESSAGETOFRAGMENTKEY, textView.getText().toString());
             fragment.setArguments(bundle);
         }
     }
@@ -54,11 +56,7 @@ public class CommunicationBundleActivity extends AppCompatActivity {
     }
 
     public void sendMessageToFragment(View view) {
-//        TextView textView = findViewById(R.id.text_view_activity);
-//        if(textView != null){
-//            Bundle bundle = new Bundle();
-//            bundle.putString(SENDMESSAGETOFRAGMENT, textView.getText().toString());
-//            fragment.setArguments(bundle);
-//        }
+        sendData();
+        addFragmentDinamically();
     }
 }

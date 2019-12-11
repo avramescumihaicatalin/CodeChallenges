@@ -25,4 +25,10 @@
         android:textColor="@android:color/white"
         android:textSize="48dp"/>
 
+    <Button
+        android:id="@+id/button_send_data_to_Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send data to Activity" />
+
 </LinearLayout>
