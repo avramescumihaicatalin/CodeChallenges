@@ -31,8 +31,11 @@ public class CommunicationMethodsActivity extends AppCompatActivity {
 
 
     public void onClickCommunication(View view) {
+        fragment.receiveDataFromActivity("data");
+//        or this if you need to get the fragment instance.
         FragmentManager fragmentManager = getSupportFragmentManager();
         CommunicationMethodsFragment fragment = (CommunicationMethodsFragment) fragmentManager.findFragmentById(R.id.placeholder);
         fragment.receiveDataFromActivity("Data from activity");
+
     }
 }
