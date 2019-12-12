@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary2">#F44336</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="backgroundViewGroups">#FFF9CF</color>
@@ -8,7 +9,7 @@
     <color name="color2ViewGroups">#128477</color>
     <color name="color3ViewGroups">#D62261</color>
     <color name="backgroundConstraintLayout">#FAFAFA</color>
-    <color name="color_orange">#FC987E</color>
+    <color name="color_orange">#D63E16</color>
     <color name="color_green">#CDEDD7</color>
     <color name="color_blue">#7BCCC6</color>#CDEDD7
     <color name="color_green_dark">#A2C89C</color>
