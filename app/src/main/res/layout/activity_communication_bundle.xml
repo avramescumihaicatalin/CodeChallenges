@@ -13,18 +13,18 @@
         android:background="@color/color_green"
         tools:layout_height="50dp"/>
 
-    <TextView
-        android:id="@+id/text_view_activity"
+    <EditText
+        android:id="@+id/edit_text_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="text de test"
         android:textSize="24dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:onClick="sendMessageToFragment"/>
+        android:onClick="onClickCommunication"
+        android:text="send data to fragment"/>
 
 </LinearLayout>

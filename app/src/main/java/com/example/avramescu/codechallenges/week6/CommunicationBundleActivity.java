@@ -1,11 +1,12 @@
 package com.example.avramescu.codechallenges.week6;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.avramescu.codechallenges.R;
 
@@ -20,14 +21,12 @@ public class CommunicationBundleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_communication_bundle);
 
-        fragment = new CommunicationBundleFragment();
+//        fragment = new CommunicationBundleFragment();
 
-//        sendData();
-        addFragmentDinamically();
-//        lastTry();
+        onCreateCommunication();
     }
 
-    private void lastTry() {
+    private void onCreateCommunication() {
         Bundle bundle = new Bundle();
         String myMessage = "Stack Overflow is cool!";
         bundle.putString("message", myMessage );
@@ -38,12 +37,17 @@ public class CommunicationBundleActivity extends AppCompatActivity {
         transaction.commit();
     }
 
+    public void onClickCommunication(View view) {
+        sendData();
+        addFragmentDinamically();
+    }
+
     private void sendData() {
         fragment = new CommunicationBundleFragment();
-        TextView textView = findViewById(R.id.text_view_activity);
-        if(textView != null){
+        EditText editText = findViewById(R.id.edit_text_activity);
+        if(editText != null){
             Bundle bundle = new Bundle();
-            bundle.putString(SENDMESSAGETOFRAGMENTKEY, textView.getText().toString());
+            bundle.putString(SENDMESSAGETOFRAGMENTKEY, editText.getText().toString());
             fragment.setArguments(bundle);
         }
     }
@@ -52,11 +56,6 @@ public class CommunicationBundleActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.placeholder, fragment);
         fragmentTransaction.commit();
-
     }
 
-    public void sendMessageToFragment(View view) {
-        sendData();
-        addFragmentDinamically();
-    }
 }

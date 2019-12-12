@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/color_yellow">
+    android:background="@color/color_yellow"
+    android:padding="24dp">
 
     <SeekBar
         android:layout_width="match_parent"
@@ -20,7 +21,6 @@
         android:id="@+id/text_view_fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TEXT"
         android:layout_gravity="center"
         android:textColor="@android:color/white"
         android:textSize="48dp"/>
@@ -29,6 +29,7 @@
         android:id="@+id/button_send_data_to_Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send data to Activity" />
+        android:text="Send data to Activity"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
