@@ -8,13 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.avramescu.codechallenges.R;
 
-public class CommunicationListenerFragment extends Fragment {
+public class CommunicationListenerFragment extends Fragment implements ActivityListener{
 
     FragmentListener mListener;
     Button mButton;
+    TextView mTextViewFragment;
 
     @Nullable
     @Override
@@ -31,6 +33,7 @@ public class CommunicationListenerFragment extends Fragment {
                 mListener.onFragmentMethodClicked();
             }
         });
+        mTextViewFragment = getView().findViewById(R.id.text_view_fragment);
         super.onResume();
     }
 
@@ -38,10 +41,19 @@ public class CommunicationListenerFragment extends Fragment {
         this.mListener = listener;
     }
 
+    @Override
+    public void onActivityMethodClicked(String data) {
+        mTextViewFragment.setText("received from activity:" + data);
+    }
+
     public interface FragmentListener{
         void onFragmentMethodClicked();
     }
 
-
-
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        CommunicationListenerActivity activity = (CommunicationListenerActivity) getActivity();
+        activity.setActivityListener(this);
+    }
 }

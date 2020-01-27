@@ -5,14 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.avramescu.codechallenges.R;
 
 public class CommunicationBundleActivity extends AppCompatActivity {
 
-    public static final String SENDMESSAGETOFRAGMENTKEY = "SENDMESSAGETOFRAGMENTKEY";
+    public static final String SEND_MESSAGE_TO_FRAGMENT_KEY = "SEND_MESSAGE_TO_FRAGMENT_KEY";
 
     CommunicationBundleFragment fragment;
 
@@ -47,7 +45,7 @@ public class CommunicationBundleActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.edit_text_activity);
         if(editText != null){
             Bundle bundle = new Bundle();
-            bundle.putString(SENDMESSAGETOFRAGMENTKEY, editText.getText().toString());
+            bundle.putString(SEND_MESSAGE_TO_FRAGMENT_KEY, editText.getText().toString());
             fragment.setArguments(bundle);
         }
     }

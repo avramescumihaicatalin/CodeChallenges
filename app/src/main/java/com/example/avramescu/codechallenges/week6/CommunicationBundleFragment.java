@@ -34,7 +34,7 @@ public class CommunicationBundleFragment extends Fragment {
 
         Bundle bundle = this.getArguments();
         if(mTextView != null && bundle != null){
-            mTextView.setText(bundle.getString(CommunicationBundleActivity.SENDMESSAGETOFRAGMENTKEY));
+            mTextView.setText(bundle.getString(CommunicationBundleActivity.SEND_MESSAGE_TO_FRAGMENT_KEY));
         }
 
         super.onResume();
