@@ -1,16 +1,16 @@
-package com.example.avramescu.codechallenges.week6.navigationtemplate.ui.share;
+package com.example.avramescu.codechallenges.week6.ui.home;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

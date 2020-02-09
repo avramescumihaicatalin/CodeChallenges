@@ -1,16 +1,16 @@
-package com.example.avramescu.codechallenges.week6.navigationtemplate.ui.slideshow;
+package com.example.avramescu.codechallenges.week6.ui.send;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class SendViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public SendViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is send fragment");
     }
 
     public LiveData<String> getText() {
