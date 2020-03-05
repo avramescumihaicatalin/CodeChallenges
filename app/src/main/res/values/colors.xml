@@ -16,4 +16,5 @@
     <color name="color_yellow">#F0C160</color>
     <color name="color_gray">#7AA3B9</color>
     <color name="color_background_odd_items_recycler_view">#F1E9E9</color>
+    <color name="white">#FFFFFF</color>
 </resources>
