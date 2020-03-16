@@ -20,7 +20,7 @@
         <activity
             android:name=".week6.NavigationActivity"
             android:label="Navigation Activity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/MyThemeNoActionBar">
         </activity>
         <activity android:name=".week6.CommunicationListenerActivity" />
         <activity android:name=".week6.CommunicationMethodsActivity" />
