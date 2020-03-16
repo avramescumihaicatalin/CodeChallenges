@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".week6.tab.TabActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".week7.BatteryLevelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".week7.CardViewActivity">
+
+        </activity>
+        <activity
+            android:name=".week6.tab.TabActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".week6.NavigationActivity"
             android:label="Navigation Activity"
-            android:theme="@style/MyThemeNoActionBar">
-        </activity>
+            android:theme="@style/MyThemeNoActionBar" />
         <activity android:name=".week6.CommunicationListenerActivity" />
         <activity android:name=".week6.CommunicationMethodsActivity" />
         <activity android:name=".week6.CommunicationBundleActivity" />
