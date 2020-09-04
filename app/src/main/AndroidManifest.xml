@@ -9,24 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".week6.navigationtemplate.TemplateNavigationActivity"
-            android:label="@string/title_activity_template_navigation"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".week7.DatePickerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".week6.navigation.NavigationActivity"
+        <activity android:name=".week7.BatteryLevelActivity" />
+        <activity android:name=".week7.CardViewActivity" />
+        <activity
+            android:name=".week6.tab.TabActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".week6.NavigationActivity"
             android:label="Navigation Activity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".week6.CommunicationListenerActivity">
-
-        </activity>
+            android:theme="@style/MyThemeNoActionBar" />
+        <activity android:name=".week6.CommunicationListenerActivity" />
         <activity android:name=".week6.CommunicationMethodsActivity" />
         <activity android:name=".week6.CommunicationBundleActivity" />
         <activity android:name=".week6.DynamicallyFragmentActivity" />

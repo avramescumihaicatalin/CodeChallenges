@@ -7,13 +7,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.avramescu.codechallenges.R;
 
 public class CommunicationMethodsFragment extends Fragment {
 
-    TextView textView;
+    TextView mTextView;
+    Button mButtonSendDataToActivity;
 
     @Nullable
     @Override
@@ -23,11 +25,24 @@ public class CommunicationMethodsFragment extends Fragment {
 
     @Override
     public void onResume() {
-        textView  = getView().findViewById(R.id.text_view_fragment);
+        mTextView = getView().findViewById(R.id.text_view_fragment);
+        mButtonSendDataToActivity = getView().findViewById(R.id.button_send_data_to_Activity);
+        mButtonSendDataToActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendDataToActivity();
+            }
+        });
         super.onResume();
     }
 
+    private void sendDataToActivity() {
+        String data = "data from fragment";
+        CommunicationMethodsActivity activity = (CommunicationMethodsActivity)getActivity();
+        activity.receiveDataFromFragment(data);
+    }
+
     public void receiveDataFromActivity(String data){
-        textView.setText(data);
+        mTextView.setText(data);
     }
 }
