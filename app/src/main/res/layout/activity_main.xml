@@ -1,179 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/color_orange"
-            android:text="@string/this_is_an_orange_textview"
-            android:textSize="20sp"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/color_green"
-            android:text="@string/this_is_a_green_textview"
-            android:textSize="20sp"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/color_blue"
-            android:text="@string/this_is_a_blue_textview"
-            android:textSize="20sp"
-            android:gravity="center"/>
-
-    </LinearLayout>
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/color_blue"
-            android:layout_margin="10dp"
-            android:text="@string/this_is_a_button"
-            android:textSize="20sp"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/images"
-            android:scaleType="fitCenter"
-            android:layout_weight="1"
-            android:layout_margin="10dp"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:width="0dp"
-            android:background="@color/color_green_dark"
-            android:text="@string/this_is_a_green_button"
-            android:textSize="20sp"
-            android:layout_margin="10dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.6"
-        android:orientation="vertical"
-        android:background="@color/color_yellow">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="@string/this_is_an_edittext"
-            android:inputType="text"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:hint="@string/this_is_a_new_edittext"
-            android:layout_weight="1"
-            android:inputType="text"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:background="@color/color_blue">
 
-            <CheckBox
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:text="@string/notify_me" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week2.MultipleViewsActivity"
+            android:onClick="multipleViewsActivityOnClick"/>
 
-            <Switch
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:text="@string/auto_backup" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week3.FrameLayoutActivity"
+            android:onClick="FrameLayoutActivityOnClick"/>
 
-        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week3.ScrollViewActivity"
+            android:onClick="scrollViewActivityOnClick"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/color_gray"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week3.SpinnerActivity"
+            android:onClick="spinnerActivityOnClick"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:background="@color/color_blue">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week4.ConstraintLayoutActivity"
+            android:onClick="constraintLayoutActivityOnClick"/>
 
-            <RatingBar
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:numStars="5"
-                android:stepSize="1"
-                android:rating="4"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week4.RecyclerViewActivity"
+            android:onClick="recyclerViewActivityOnClick"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@color/color_gray"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week5.FirstActivity"
+            android:onClick="firstActivityOnClick"/>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
-                android:text="@string/yes"
-                android:checked="false"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.8"
-                android:text="@string/no"
-                android:checked="false"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week5.FirstActivityButtons"
+            android:onClick="firstActivityButtonsOnClick"/>
 
-        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week5.FirstActivityChat"
+            android:onClick="firstActivityChatOnClick"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week6.CommunicationBundleActivity"
+            android:onClick="communicationBundleActivityOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week6.CommunicationListenerActivity"
+            android:onClick="communicationListenerOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week6.CommunicationMethodsActivity"
+            android:onClick="communicationMethodsOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week6.DinamicallyFragmentActivity"
+            android:onClick="dynamicallyFragmentActivityOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week6.NavigationActivity"
+            android:onClick="navigationActivityOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week6.StaticallyFragmentActivity"
+            android:onClick="staticallyFragmentActivityOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week7.BatteryLevelActivity"
+            android:onClick="batteryLevelActivityOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week7.CardViewActivity"
+            android:onClick="cardViewActivityOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week7.DatePickerActivity"
+            android:onClick="datePickerActivityOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week8.SwipeRefreshActivity"
+            android:onClick="swipeRefreshActivityOnClick"/>
 
     </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.7"
-        android:background="@color/color_blue">
-    </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

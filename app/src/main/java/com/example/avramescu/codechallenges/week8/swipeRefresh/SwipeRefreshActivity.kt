@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.activity_swipe_refresh.*
 class SwipeRefreshActivity : AppCompatActivity() {
 
     var counter: Int = 0
-//    var isLoading: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,8 +20,7 @@ class SwipeRefreshActivity : AppCompatActivity() {
 
     private fun setSwipeListener() {
         swipe_refresh_layout.setOnRefreshListener {
-//            isLoading = true
-            counter ++
+            counter++
             Toast.makeText(this@SwipeRefreshActivity, "swiped: $counter times", Toast.LENGTH_SHORT).show()
 
             val timer: CountDownTimer = object : CountDownTimer(3000, 1000) {
