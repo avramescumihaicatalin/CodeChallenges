@@ -18,6 +18,7 @@ import com.example.avramescu.codechallenges.week6.*
 import com.example.avramescu.codechallenges.week7.BatteryLevelActivity
 import com.example.avramescu.codechallenges.week7.CardViewActivity
 import com.example.avramescu.codechallenges.week7.DatePickerActivity
+import com.example.avramescu.codechallenges.week8.bottomnavigation.BottomNavigationActivity
 import com.example.avramescu.codechallenges.week8.swipeRefresh.SwipeRefreshActivity
 
 class MainActivity : AppCompatActivity() {
@@ -85,6 +86,9 @@ class MainActivity : AppCompatActivity() {
     }
     fun batteryLevelActivityOnClick(view: View) {
         startActivity(Intent(this, BatteryLevelActivity::class.java))
+    }
+    fun bottomNavigationViewOnClick(view: View) {
+        startActivity(Intent(this, BottomNavigationActivity::class.java))
     }
 
 }
