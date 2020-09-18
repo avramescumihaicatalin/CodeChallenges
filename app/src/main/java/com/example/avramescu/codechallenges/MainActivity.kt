@@ -19,6 +19,7 @@ import com.example.avramescu.codechallenges.week7.BatteryLevelActivity
 import com.example.avramescu.codechallenges.week7.CardViewActivity
 import com.example.avramescu.codechallenges.week7.DatePickerActivity
 import com.example.avramescu.codechallenges.week8.bottomnavigation.BottomNavigationActivity
+import com.example.avramescu.codechallenges.week8.bottonappbar.BottomAppBarActivity
 import com.example.avramescu.codechallenges.week8.swipeRefresh.SwipeRefreshActivity
 
 class MainActivity : AppCompatActivity() {
@@ -89,6 +90,9 @@ class MainActivity : AppCompatActivity() {
     }
     fun bottomNavigationViewOnClick(view: View) {
         startActivity(Intent(this, BottomNavigationActivity::class.java))
+    }
+    fun bottomAppBarViewOnClick(view: View) {
+        startActivity(Intent(this, BottomAppBarActivity::class.java))
     }
 
 }

@@ -134,6 +134,12 @@
             android:text="week8.BottomNavigationView"
             android:onClick="bottomNavigationViewOnClick"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="week8.BottomAppBar"
+            android:onClick="bottomAppBarViewOnClick"/>
+
     </LinearLayout>
 
 </ScrollView>
